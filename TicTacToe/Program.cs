@@ -22,7 +22,8 @@
     static void Main(string[] args)
     {
         Dictionary<string, int> results = new Dictionary<string, int>();
-        bool console = false;
+        Console.WriteLine("Would you like to play ? (Y/N)");
+        bool console = Console.ReadLine().ToUpper() == "Y";
         if (console) 
         {
             int[] decision = { 0, 0, 0, 0, 0 };
